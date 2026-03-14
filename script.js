@@ -1,12 +1,17 @@
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// Smooth scroll for all anchors
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
     e.preventDefault();
+    const target = document.querySelector(link.getAttribute("href"));
+    if(target){
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 
-    const target = document.querySelector(this.getAttribute('href'));
-
-    window.scrollTo({
-      top: target.offsetTop - 60,
-      behavior: 'smooth'
-    });
+// Skill click animation
+document.querySelectorAll(".skill").forEach(skill => {
+  skill.addEventListener("click", () => {
+    skill.classList.toggle("active");
   });
 });

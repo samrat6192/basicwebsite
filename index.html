@@ -1,115 +1,98 @@
-<!-- Folder Structure -->
-<!--
-portfolio/
- ├── index.html
- ├── styles.css
- └── script.js
--->
-
-<!-- ================= index.html ================= -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QA Portfolio - Your Name</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test with Sam | QA Engineer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1>Your Name</h1>
-    <h2>Senior QA Engineer</h2>
-    <p>Ensuring quality through automation, robust testing strategies, and continuous improvement.</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </div>
+<header>
+<div class="logo">
+    <img src="assets/logo.png" alt="Samrat Pandey">
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <span class="logo">QA Portfolio</span>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I'm a Senior QA Engineer experienced in building test strategies, automation
-    frameworks, and ensuring high-quality software delivery. I specialize in
-    modern testing tools and CI/CD integration.
-  </p>
+<section class="hero">
+<div class="hero-content">
+<h1>Welcome to My QA World</h1>
+<p class="subtitle">Manual • Automation • API • Performance</p>
+<a href="#projects" class="cta">View My Work</a>
+</div>
 </section>
 
-<section id="skills" class="section alt">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-card">Manual Testing</div>
-    <div class="skill-card">Automation Testing</div>
-    <div class="skill-card">Playwright</div>
-    <div class="skill-card">API Testing</div>
-    <div class="skill-card">Postman</div>
-    <div class="skill-card">CI/CD</div>
-    <div class="skill-card">Test Strategy</div>
-    <div class="skill-card">Performance Testing</div>
-  </div>
-
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a Senior QA Engineer, passionate about building reliable software with robust test strategies, automation frameworks, API validation, and performance testing. I deliver quality and precision, always.
+</p>
 </section>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Playwright Automation Framework</h3>
-      <p>
-        Built a scalable end-to-end testing framework using Playwright and
-        integrated it with CI pipelines.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h3>API Testing Suite</h3>
-      <p>
-        Developed automated API validation scripts with Postman and Newman
-        for regression testing.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h3>Test Strategy Implementation</h3>
-      <p>
-        Led test planning and quality processes across multiple product
-        releases.
-      </p>
-    </div>
-
-  </div>
-
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill">Manual Testing</div>
+<div class="skill">Playwright</div>
+<div class="skill">Selenium</div>
+<div class="skill">API Testing</div>
+<div class="skill">Postman</div>
+<div class="skill">Performance Testing</div>
+<div class="skill">CI/CD</div>
+</div>
 </section>
 
-<section id="contact" class="section alt">
-  <h2>Contact</h2>
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects-grid">
 
-  <div class="contact-box">
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
-  </div>
+<div class="project-card">
+<h3>Manual Testing</h3>
+<p>Test plan, test cases, and bug reports for demo apps.</p>
+<button>View Documentation</button>
+</div>
 
+<div class="project-card">
+<h3>Automation Framework</h3>
+<p>Automation project using Playwright & Page Object Model.</p>
+<button>View GitHub</button>
+</div>
+
+<div class="project-card">
+<h3>API Testing</h3>
+<p>REST API testing with Postman collections and automation.</p>
+<button>View API Tests</button>
+</div>
+
+<div class="project-card">
+<h3>Performance Testing</h3>
+<p>Load testing with k6 and performance metrics.</p>
+<button>View Results</button>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: samratpandey67@gmail.com</p>
+<p>GitHub: <a href="https://github.com/samrat6192" target="_blank">github.com/samrat6192</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Your Name | Senior QA Engineer</p>
+<p>© 2026 Samrat Pandey | QA Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
