@@ -43,16 +43,22 @@ I am a Senior QA Engineer, passionate about building reliable software with robu
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
-<div class="skills-grid">
-<div class="skill">Manual Testing</div>
-<div class="skill">Playwright</div>
-<div class="skill">Selenium</div>
-<div class="skill">API Testing</div>
-<div class="skill">Postman</div>
-<div class="skill">Performance Testing</div>
-<div class="skill">CI/CD</div>
-</div>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill" onclick="toggleSkill(this, 'manual')">Manual Testing</div>
+    <div class="skill" onclick="toggleSkill(this, 'playwright')">Playwright</div>
+    <div class="skill" onclick="toggleSkill(this, 'selenium')">Selenium</div>
+    <div class="skill" onclick="toggleSkill(this, 'api')">API Testing</div>
+    <div class="skill" onclick="toggleSkill(this, 'postman')">Postman</div>
+    <div class="skill" onclick="toggleSkill(this, 'performance')">Performance Testing</div>
+    <div class="skill" onclick="toggleSkill(this, 'cicd')">CI/CD</div>
+  </div>
+
+  <!-- This panel sits BELOW the grid -->
+  <div class="skill-panel" id="skill-panel">
+    <h3 id="skill-panel-title"></h3>
+    <ul id="skill-panel-list"></ul>
+  </div>
 </section>
 
 <section id="projects">
@@ -66,9 +72,9 @@ I am a Senior QA Engineer, passionate about building reliable software with robu
 </div>
 
 <div class="project-card">
-<h3>Automation Framework</h3>
-<p>Automation project using Playwright & Page Object Model.</p>
-<button>View GitHub</button>
+  <h3>Playwright Automation</h3>
+  <p>IPO automation on Meroshare with Playwright.</p>
+  <button onclick="window.open('https://github.com/samrat6192/meroshare-automation-playwright', '_blank')">View GitHub</button>
 </div>
 
 <div class="project-card">
